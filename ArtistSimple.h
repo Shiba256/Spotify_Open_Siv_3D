@@ -18,7 +18,7 @@ namespace Spotify {
 
 		virtual ~ArtistSimple() {}
 
-		void set(const JSON& _json);
+		virtual void set(const JSON& _json);
 
 		String id;
 		String name;
