@@ -5,12 +5,15 @@
 //structs
 #include"Album.h"
 #include"Artist.h"
-#include"ArtistsSimple.h"
+#include"ArtistSimple.h"
 #include"Track.h"
 #include"TrackFeature.h"
 
 //enums
 #include"Key.h"
 #include"Mode.h"
+
+//apis
+#include"API.h"
 
 #endif
