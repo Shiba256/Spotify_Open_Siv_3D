@@ -162,6 +162,9 @@
     <ClCompile Include="TrackFeature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TrackSimple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -784,6 +787,7 @@
       <Filter>Resource Files\engine\shader\glsl</Filter>
     </None>
     <None Include=".gitignore" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="App\example\test.mp3">
@@ -866,6 +870,9 @@
     </ClInclude>
     <ClInclude Include="API.ipp">
       <Filter>Impl Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackSimple.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

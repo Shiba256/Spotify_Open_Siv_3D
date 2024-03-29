@@ -35,6 +35,7 @@
 Intermediate/
 App/_sys_/
 App/AS_DEBUG/
+APP/example
 .vs/
 *.vcxproj.user
 *.sdf
