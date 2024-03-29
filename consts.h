@@ -20,6 +20,10 @@ namespace Spotify {
 		constexpr const char32_t* href{ U"href" };
 		constexpr const char32_t* release_date{ U"release_date" };
 		constexpr const char32_t* album_type{ U"album_type" };
+		constexpr const char32_t* tracks{ U"tracks" };
+		constexpr const char32_t* items{ U"items" };
+		constexpr const char32_t* albums{ U"albums" };
+		constexpr const char32_t* access_token{ U"access_token" };
 
 		constexpr const char32_t* acousticness{ U"acousticness" };
 		constexpr const char32_t* danceability{ U"danceability" };
@@ -34,6 +38,8 @@ namespace Spotify {
 		constexpr const char32_t* tempo{ U"tempo" };
 		constexpr const char32_t* time_signature{ U"time_signature" };
 		constexpr const char32_t* valence{ U"valence" };
+
+
 	}
 
 	namespace unknown {

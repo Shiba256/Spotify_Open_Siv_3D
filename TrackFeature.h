@@ -16,10 +16,17 @@ namespace Spotify {
 
 		void set(const JSON& _json);
 
+		HashTable<String, double> AsHashTable()const noexcept;
+
+		HashTable<String, double> AsHashTableNormalized(double tempo_max = 250.0)const noexcept;
+
+		inline Duration length() {
+			return Duration{ duration_ms };
+		}
+
 		String id{};
 		double acousticness{ 0.0 };
 		double danceability{ 0.0 };
-		MicrosecondsF duration_ms{ 0.0ms };
 		double energy{ 0.0 };
 		double instrumentalness{ 0.0 };
 		Key key{ Key::none };
@@ -30,6 +37,8 @@ namespace Spotify {
 		double tempo{ 0.0 };
 		double time_signature{ 0.0 };
 		double valence{ 0.0 };
+	private:
+		MillisecondsF duration_ms{ 0.0ms };
 	};
 }
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
-#ifndef _SPOTIFY_ARTISTSSIMPLE_H_
-#define _SPOTIFY_ARTISTSSIMPLE_H_
+#ifndef _SPOTIFY_ARTISTSIMPLE_H_
+#define _SPOTIFY_ARTISTSIMPLE_H_
 
 #include"stdafx.h"
 
@@ -18,7 +18,7 @@ namespace Spotify {
 
 		virtual ~ArtistSimple() {}
 
-		void set(const JSON& _json);
+		virtual void set(const JSON& _json);
 
 		String id;
 		String name;

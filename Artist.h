@@ -2,7 +2,7 @@
 #ifndef  _SPOTIFY_ARTIST_H_
 #define  _SPOTIFY_ARTIST_H_
 
-#include"ArtistsSimple.h"
+#include"ArtistSimple.h"
 
 #include"stdafx.h"
 

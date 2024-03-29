@@ -2,7 +2,7 @@
 #ifndef _SPOTIFY_ALBUM_H_
 #define _SPOTIFY_ALBUM_H_
 
-#include"ArtistsSimple.h"
+#include"ArtistSimple.h"
 
 #include"stdafx.h"
 
@@ -29,7 +29,7 @@ namespace Spotify {
 
 		Array<Texture> getImage();
 
-		AlbumType album_type;
+		AlbumType album_type{ AlbumType::none };
 		URL href;
 		Array<URL> img_url;
 		Date release_date{ 0,0,0 };

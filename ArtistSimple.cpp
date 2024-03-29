@@ -1,4 +1,4 @@
-﻿#include"ArtistsSimple.h"
+﻿#include"ArtistSimple.h"
 
 #include"common.h"
 

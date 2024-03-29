@@ -136,6 +136,9 @@
     <Filter Include="Resource Files\engine\font\min">
       <UniqueIdentifier>{1b103960-f11a-4515-b4f1-f59333ce00d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Impl Files">
+      <UniqueIdentifier>{f94c3723-0650-4b64-9e6a-2fed886cfdfb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -157,6 +160,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TrackFeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackSimple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -781,6 +787,7 @@
       <Filter>Resource Files\engine\shader\glsl</Filter>
     </None>
     <None Include=".gitignore" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="App\example\test.mp3">
@@ -837,7 +844,7 @@
     <ClInclude Include="Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ArtistsSimple.h">
+    <ClInclude Include="ArtistSimple.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Artist.h">
@@ -859,6 +866,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="API.ipp">
+      <Filter>Impl Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackSimple.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

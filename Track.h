@@ -6,20 +6,18 @@
 
 #include"Album.h"
 
+#include"TrackSimple.h"
+
 namespace Spotify {
-	struct Track {
+	struct Track : public TrackSimple {
 		Track(const JSON& _json) {
 			this->set(_json);
 		}
 
 		void set(const JSON& _json);
 
-		Array<ArtistSimple> artists;
 		Album album;
-		String id;
-		String name;
 		uint8 popularity;
-		URL href;
 	};
 }
 #endif
