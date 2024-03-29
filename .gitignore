@@ -38,5 +38,5 @@ App/AS_DEBUG/
 .vs/
 *.sln
 *.vcxproj
-*.filters
-*.user
+*.vcxproj.filters
+*.vcxproj.user
