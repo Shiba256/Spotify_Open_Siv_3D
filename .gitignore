@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Private files
+Intermediate/
+App/_sys_/
+App/AS_DEBUG/
+.vs/
