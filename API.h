@@ -6,6 +6,7 @@
 #include"Artist.h"
 #include"ArtistSimple.h"
 #include"Track.h"
+#include"TrackSimple.h"
 #include"TrackFeature.h"
 
 namespace Spotify {
@@ -43,9 +44,13 @@ namespace Spotify {
 		Array<Artist> searchArtists(const String& query, uint16 max = 10, uint16 offset = 0, const String& market = U"JP");
 		Array<Album> searchAlbums(const String& query, uint16 max = 10, uint16 offset = 0, const String& market = U"JP");
 
-		TrackFeature getTracksFeatures(const String& id);
+		Array<Track> getArtistTopTracks(const String& id);
+		Array<Artist> getRelatedArtists(const String& id);
+		Array<Album> getArtistAlbums(const String& id, uint16 limit = 10u, uint16 offset = 5u, const String& market = U"JP");
 
-		Array<Track> getArtistTop(const String& id);
+		Array<Track> getRelatedTracksSimple(const String& track_id, uint16 max = 10u, const String& market = U"JP");
+		Array<TrackSimple> getAlbumTracks(const String& id, uint16 max = 10u, uint16 offset = 0u, const String& market = U"JP");
+		TrackFeature getTracksFeatures(const String& id);
 
 		void refreshToken();
 
