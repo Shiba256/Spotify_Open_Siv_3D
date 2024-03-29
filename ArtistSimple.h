@@ -1,6 +1,6 @@
 ﻿#pragma once
-#ifndef _SPOTIFY_ARTISTSSIMPLE_H_
-#define _SPOTIFY_ARTISTSSIMPLE_H_
+#ifndef _SPOTIFY_ARTISTSIMPLE_H_
+#define _SPOTIFY_ARTISTSIMPLE_H_
 
 #include"stdafx.h"
 
