@@ -36,3 +36,7 @@ Intermediate/
 App/_sys_/
 App/AS_DEBUG/
 .vs/
+.sln
+.vcxproj
+.filters
+.user
