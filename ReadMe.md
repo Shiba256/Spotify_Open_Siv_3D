@@ -10,7 +10,11 @@ This project is currently **under development**. As such,**The API is expect to 
     ○ Search albums
     ○ Search artists
     ○ Get track features
-    ○ Get artist top songs
+    ○ Get artist top tracks
+    ○ Get artist albums
+    ○ Get related tracks(simple)
+    ○ Get related artists
+
 
 ### 3.Examples
 ```C++
@@ -18,15 +22,21 @@ This project is currently **under development**. As such,**The API is expect to 
 
 void Main(){
     //Set id and secret
-    Spotify::API api{U"id",U"secret"};
+    Spotify::API api{U"your_id",U"your_secret"};
+    
+    //Search Artists
+    for (const auto& artist : api.searchArtists(U"name", 1)) {
 
-    //Get tracks
-    const auto tracks{api.searchTracks(U"name")};
-
-    //Print track name
-    for(const auto& track : tracks){
-        Print << track.name;
-    }
+        //Print Artist
+		Print << U"[{}]"_fmt(artist.name);
+		
+        //Get Artist Top Tracks
+        for (const auto& track : api.getArtistTopTracks(artist.id)) {
+			
+            //Print Track and BPM
+            Print << U"Track[{}] , BPM={}"_fmt(track.name, api.getTracksFeatures(track.id).tempo);
+		}
+	}
 
     while(System::Update()){}
 }
