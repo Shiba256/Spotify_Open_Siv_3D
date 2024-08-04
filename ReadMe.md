@@ -35,12 +35,12 @@ void Main(){
 
 ### 4.API
 List of [struct class enum]
-    ○ struct Album
-    ○ class API
-    ○ struct Artist
-    ○ struct ArtistSimple
-    ○ enum Key
-    ○ enum Mode
-    ○ struct Track
-    ○ struct TrackFeature
-    ○ struct TrackSimple
+- struct Album
+- class API
+- struct Artist
+- struct ArtistSimple
+- enum Key
+- enum Mode
+- struct Track
+- struct TrackFeature
+- struct TrackSimple
